@@ -1,194 +1,208 @@
+*{
+    padding:0;
+    margin: 0.5em .5em .5em .5em;
+}
 body{
-    margin: 0;
-    width: 100%;
-    /* font-family: ***, "sans-serif"; */
+    height: 100%;
+    border: solid; 
+    color: rgb(48, 45, 45);
+    border-width: thick;
+    height:100%; 
+    width: 99%; 
+    font-family: 'Lora', serif;
+    margin-left:1px;
+    
+}
+.background-1{
+    background: linear-gradient(90deg, white 50%, #f4ebe3 50%);
+    margin-bottom: -.5em;
+}
+.hrlarge{
+    border: solid 75px #515c4e;
+    margin-top: 0 !important;
 }
 
-.link-wrapper{
-    display: flex;
-    justify-content: flex-end;
-    align-items:flex-start;
-    padding-top: 20px;
-    
-}
-nav a{
-    font-size: 20px;
-    color: black;
-    font-weight: bold;
-    margin: 0, 20px;
+.header-container{
+    padding: 12px;
 
-    
 }
-.home{
-    width:100%;
+
+.header-flex{
     display: flex;
-    
-}
-.left-column{
-    width: 40%; 
+    justify-content: center;
+    align-items: center;
    
 }
-
-.right-column{
-    width: 60%;
-    background-image: url(assets/greenery.jpg);
-    padding:100px;
-    height: 300px;
+.logo{
+    height:150px;
+    width: 150px;
+    border: solid; 
+    color: rgb(48, 45, 45);
+    border-width: medium;
 }
-
-
-
-/* .header-wrapper {
-    height: 140px;
-    background-color: #3b5633;
-    color: #fff;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 100px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-
-
+nav a{
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    color:rgb(48, 45, 45);
+    font-weight: light;
+    margin: 0 80px;
 }
-
-.left-column {
-    display: flex;
-    align-items: center;
-}
-
-.header-styles {
-font-family: "Ubuntu Condensed", sans-serif;
-font-size:1em;
-}
-
-.center-column {
-    width: 500px;
-}
-
-.logo {
-    display:flex;
-    justify-content: center;
-    margin-bottom: 42px;
-}
-
-.logo img {
-    width: 216px;
-    height: 100%;
-}
-
-.link-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-link {
-    width: 70px;
-    text-align: center;
-    font-family: "Ubuntu Condensed", sans-serif;
-    color: #fff;
+a{
     text-decoration: none;
-    transition: 0.5s;
 }
-
-.nav-link:hover {
-    color: #bcca99;
-    letter-spacing: 2px;
+a:hover{
+    color: #9ea599;
+    transition: 500ms ease;
+    
 }
-
-.right-column {
-    display: flex;
-    align-items: center;
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
 }
-
-.icon {
-    font-size: 2em;
+.home-photo{
+    width: 700px;
+    height: 450px;
 }
-
-.icon-mr {
-    margin-right:15px;
-}
-
-.icon-ml {
-    margin-left: 15; 
-}
-
-.main-section {
-    background-image: url(assets/kayak_adventures.jpg);
-    padding: 100px;
-    height: 300px;
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.top-heading {
-    padding: 1px 20 px;
-    background-color: #442c06;
-    color: #cbcbcb;
-    width: 290px;
-    border-radius: 2px;
-}
-
-.bottom-heading {
-    background-color: #6b9b5d;
-    color: #442c06;
-    padding: 1px 20px;
-    margin-top: 15px;
-    width: 107px;
-    border-radius: 2px;
-}
-
-.features-section {
-    height: 400px; 
-    background-image: url(assets/kayak-multiple.png);
-    background-color: #6b9b5d;
-    border-top: 10px solid #fff; 
-    color: #fff; 
+.sidebar-container{
+    padding: 40px 50px 150px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Ubuntu Condensed', 'sans-serif';
-    box-shadow: inset 0px -26px 79px -8px rgba(0,0,0,0.58);
+} 
+.sidebar-title{
+    height: 600px; 
+    margin:100px;
+    align-items: center;
+}
+.sidebar-paragraph{
+    width: 500px;
+    font-size: 35px;
+    text-align: right;
+
+}
+.background-2{
+    background: linear-gradient(180deg, white 50%, #f4ebe3 50%);
+    padding-top: 50px;
+    padding-bottom: 75px;
+    /* background:#dbd8cf ; */
+}
+.box-one{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.box-two{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    
+}
+.box1-photos{
+    height: 300px;
+    width: 300px;
+    /* border:3px solid rgb(48, 45, 45); */
+    margin:40px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
-.columns-wrapper {
-    width: 1000px;
+.box1-photos:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+.paragraph-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
-
-.column {
-    padding: 20px;
-    margin: 42px;
+.paragraph-box{
+    height:200px;
+    width: 1000px;
+    border: 2px solid rgb(48, 45, 45);
+}
+.about-me-paragraph{
     text-align: center;
-    border-bottom: 5px solid transparent;
-    border-radius: 10px;
-    transition: 1s;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    
 }
-
-.column:hover {
-    border-bottom: 5px solid #fff;
+.background-3{
+    background-color:white ;
+    padding-top: 50px;
+    padding-bottom: 75px;
 }
-
-.column-icon {
-    font-size: 3em;
+.resume-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+.resume-pdf{
+    margin:0;
+    border:none;
+    
 
-.column-title {
-    font-size: 1.5em;
-    font-weight: 900;
-    height: 50px;
-    transition: 1s;
 }
-
-.column-title:hover {
-    letter-spacing: 1px;
+.quote{
+    font-size: 40px;
+    padding: 100px;
+    text-align: center;
 }
+.background-4{
+    background-color:#f4ebe3;
+    padding-top: 50px;
+    /* padding-bottom: 75px; */
+}
+.wireframe{
+    width: 600px;
+    height: 400px;
+}
+.portfolio-container{
+    padding-bottom:50px;
+}
+.portfolio-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.portfolio-description{
+    height:100px;
+    width: 300px;
+}
+.hrsmall{
+    border: solid 15px #5a5d44;
+}
+.smallpics-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-pics{
+    height: 150px;
+    width:150px;
+}
+.contact-me-container{
+    padding-top:50px;
+}
+.icons-flex{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.square{
+    margin-right:10px;
+}
+a .square{
+    color:#333
 
-.column-content {
-    letter-spacing: 2px;
-} */
+}
+.linkedin-box{
+    color: white;
+    margin-top: 2px;
+    background-color: black;
+    width: 43px;
+    height: 43px;
+    border-radius: 3px;
+}
