@@ -63,7 +63,7 @@
             <div class="paragraph-container">
                 <div class="paragraph-box">
                     <p class="about-me-paragraph">
-                        I am a Utah-born mom and aspiring web developer. The last 5 years have been spent living in
+                        I am a Utah-born mom and aspiring web developer. The last 7 years have been spent living in
                         the
                         South Dakota and Iowa and being a stay-at-home mom to three beautiful boys ages 7, 4 and 2.
                         While
@@ -71,7 +71,9 @@
                         grew to love the rolling hills of the Midwest, the mountains called and in August 2021, my boys
                         and
                         I
-                        moved back to Utah. I love being outdoors, traveling, hiking, reading any good novel and playing
+                        moved back to Utah.</p>
+                    <p class="about-me-paragraph">
+                        I love being outdoors, traveling, hiking, reading any good novel and playing
                         games with my
                         family. The greatest joy in my life are the three not-so-small humans that wake me up at the
                         crack
@@ -89,30 +91,53 @@
         <!--RESUME -->
         <h1 id="Res">RESUME</h1>
         <section class="resume-container">
-            <iframe class="resume-pdf" src="assets/Resume Graphic.pdf" #view=Fit>
-            </iframe>
-
+            <img class="resume-pdf" src="assets/Resume Graphic.png">
         </section>
         <!-- QUOTE -->
-        <div class="quote">
+        <p class="quote">
             "There is always light,
             if only we are brave enough to see it-
             if only we are brave enought to be it."
             - Amanda Gorman
-        </div>
+        </p>
     </div>
 
     <div class="background-4">
         <!-- PORTFOLIO -->
         <h1 id="Port">PORTFOLIO</h1>
         <section class="portfolio-container">
-            <div class="portfolio-wrapper">
-                <img class="wireframe" src="assets/Screen Shot 2022-02-19 at 11.34.47 AM.png">
-                <p class="portfolio-description">
-                    Tempora in nesciunt qui. Quae et fugiat maxime.
-                    Quod occaecati veritatis eos libero error. Aliquid
-                    ad ut dolor et quis voluptatem adipisci porro.
-                </p>
+            <div class="portfolio-flex">
+                <div>
+
+                    <h2 id=port-1> 1</h2>
+                    <a class="port-pics" href="https://wireframe.cc/iMCNCk" target="blank">
+                        <img src="assets/Website Screenshot.png" height="200px" width="300px">
+                    </a>
+                    <p class="port-details">Tempora in nesciunt qui. Quae et fugiat maxime.
+                        Quod occaecati veritatis eos libero error. Aliquid
+                        ad ut dolor et quis voluptatem adipisci porro.</p>
+
+                </div>
+                <div>
+                    <h2 id=port-2> 2</h2>
+                    <a class="port-pics" href="https://wireframe.cc/iMCNCk" target="blank">
+                        <img src="assets/Portfolio Website Wireframe.png" height="200px" width="300px">
+                    </a>
+                    <p class="port-details">Tempora in nesciunt qui. Quae et fugiat maxime.
+                        Quod occaecati veritatis eos libero error. Aliquid
+                        ad ut dolor et quis voluptatem adipisci porro.</p>
+
+                </div>
+                <div>
+                    <h2 id=port-3>3</h2>
+                    <a class="port-pics" href="https://wireframe.cc/iMCNCk" target="blank">
+                        <img src="assets/Portfolio Website Wireframe.png" height="200px" width="300px">
+                    </a>
+                    <p class="port-details">Tempora in nesciunt qui. Quae et fugiat maxime.
+                        Quod occaecati veritatis eos libero error. Aliquid
+                        ad ut dolor et quis voluptatem adipisci porro.</p>
+
+                </div>
             </div>
         </section>
 
@@ -128,44 +153,43 @@
             <img class="small-pics" src="assets/boston.jpg" alt="Kelly">
         </div>
         <hr class="hrsmall">
-        <div class="contact-me-container">
-            <!-- CONTACT ME -->
-            <h1 id="CM">CONTACT ME</h1>
-            <section class="contact-me-box">
-                <div class="contact-me-flex">
-                    <form action=”mailto:contact@yourdomain.com” method=”POST” enctype=”multipart/form-data”
-                        name=”EmailForm”>
+        <!-- <div class="contact-me-container"> -->
+        <!-- CONTACT ME -->
 
+        <h1 id="CM">CONTACT ME</h1>
+        <section class="contact-me-box">
 
-                        Name:<br>
+            <div class="icons-flex">
+                <h2>Let's Connect!</h2>
+                <p>
+                    Feel free to shoot out to me through email or connect with me through Linkedin.
+                </p>
 
-
-                        <input type=”text” size=”19″ name=”ContactName”><br><br>
-
-
-                        Message:<br> <textarea name=”ContactCommentt” rows=”6″ cols=”20″>
-
-
-                    </textarea><br><br> <input type=”submit” value=”Submit”>
-                    </form>
-
-
-
+                <div class="icons-box">
+                    <a href="https://www.facebook.com" target="blank">
+                        <i class="fab fa-facebook-square fa-3x square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kellyrossnelson/" target="blank">
+                        <i class="fab fa-linkedin fa-3x square"></i>
+                    </a>
                 </div>
-        </div>
-        </section>
-        <div class="icons-flex">
-            <a href="https://www.facebook.com">
-                <i class="fab fa-facebook-square fa-3x square"></i>
-            </a>
-
-            <div>
             </div>
-            <a href="https://www.linkedin.com/in/kellyrossnelson/">
-
-                <i class="fab fa-linkedin fa-3x square"></i>
-            </a>
-        </div>
+            <div class="contact-me-flex">
+                <form action="mailto:kellyrossnelson@icloud.com" method="POST" enctype="multipart/form-data"
+                    name="EmailForm">
+                    <br>
+                    <input id="name" type="text" size="40" placeholder="Name"><br>
+                    <br><br>
+                    <input id="email" type="email" size="40" placeholder="Email"><br><br>
+                    <br>
+                    <textarea id="message" type="text" placeholder="Messge"></textarea>
+                    <br><br>
+                    <button class="btn" type="submit" value="Submit">SEND</button>
+                </form>
+            </div>
+        </section>
+        <!-- </div> -->
+    </div>
     </div>
     </div>
 

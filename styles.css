@@ -5,8 +5,8 @@
 body{
     height: 100%;
     border: solid; 
-    color: rgb(48, 45, 45);
-    border-width: thick;
+    color:#5d5c59;
+    border-width: 2px;
     height:100%; 
     width: 99%; 
     font-family: 'Lora', serif;
@@ -19,7 +19,6 @@ body{
 }
 .hrlarge{
     border: solid 75px #515c4e;
-    margin-top: 0 !important;
 }
 
 .header-container{
@@ -37,13 +36,13 @@ body{
     height:150px;
     width: 150px;
     border: solid; 
-    color: rgb(48, 45, 45);
-    border-width: medium;
+    color: #5d5c59;
+    border-width: 2px;
 }
 nav a{
     font-family: 'Montserrat', sans-serif;
     font-size:15px;
-    color:rgb(48, 45, 45);
+    color:#5d5c59;
     font-weight: light;
     margin: 0 80px;
 }
@@ -82,9 +81,8 @@ h1{
 }
 .background-2{
     background: linear-gradient(180deg, white 50%, #f4ebe3 50%);
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 75px;
-    /* background:#dbd8cf ; */
 }
 .box-one{
     display:flex;
@@ -102,7 +100,6 @@ h1{
 .box1-photos{
     height: 300px;
     width: 300px;
-    /* border:3px solid rgb(48, 45, 45); */
     margin:40px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -111,6 +108,7 @@ h1{
 .box1-photos:hover {
     filter: none;
     -webkit-filter: grayscale(0);
+    /* transition: 500ms ease; */
 }
 .paragraph-container{
     display: flex;
@@ -118,9 +116,9 @@ h1{
     align-items: center;
 }
 .paragraph-box{
-    height:200px;
+    height:225px;
     width: 1000px;
-    border: 2px solid rgb(48, 45, 45);
+    /* border: 2px solid rgb(48, 45, 45); */
 }
 .about-me-paragraph{
     text-align: center;
@@ -131,7 +129,7 @@ h1{
 }
 .background-3{
     background-color:white ;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 75px;
 }
 .resume-container{
@@ -142,7 +140,10 @@ h1{
 .resume-pdf{
     margin:0;
     border:none;
-    
+    height: 650px;
+    width:1100px;
+    border:2px solid #5d5c59;
+    margin-top: 75px;
 
 }
 .quote{
@@ -152,24 +153,37 @@ h1{
 }
 .background-4{
     background-color:#f4ebe3;
-    padding-top: 50px;
-    /* padding-bottom: 75px; */
+    padding-top: 25px;
 }
-.wireframe{
-    width: 600px;
-    height: 400px;
-}
+
 .portfolio-container{
-    padding-bottom:50px;
+    padding-bottom:150px;
+
 }
-.portfolio-wrapper{
+.portfolio-flex{
     display:flex;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
+    padding: 25x;
+}
+.portfolio-flex a:hover{
+    color: #9ea599;
+    transition: 500ms ease;
+}
+h2{
+    color: #b78b4e;
+    text-align: center;
+    size: 100px;
+}
+
+.port-pics{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.portfolio-description{
-    height:100px;
-    width: 300px;
+.port-details{
+    text-align: center;
+    width:300px;
 }
 .hrsmall{
     border: solid 15px #5a5d44;
@@ -183,25 +197,75 @@ h1{
     height: 150px;
     width:150px;
 }
-.contact-me-container{
-    padding-top:50px;
+
+.contact-me-box{
+    display:flex;
+    justify-content: space-around;
+    padding-top:25px
+}
+.contact-me-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    
+}
+form{
+   padding: 20px;
+   border:2px solid #5d5c59;
+   margin:50px;
+}
+input{
+    width: 600px;
+    font-family:'Montserrat', 'sans-serif';
+    font-size: medium;
+    border:none;
+}
+textarea{
+    width: 600px;
+    height: 200px;
+    font-family:'Montserrat', 'sans-serif';
+    font-size: medium;
+    border: none;
+}
+.btn{
+    text-align: center;
+    background-color:#5a5d44;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border:none;
+    font-family:'Montserrat', 'sans-serif';
+    font-size: medium;
+
 }
 .icons-flex{
+    width: 100%;
     display:flex;
-    justify-content: flex-end;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: medium;
+    /* margin-top: 50px;
+    padding-top:50px; */
+}
+.icons-box{
+    display: flex;
+    justify-content:flex-start;
     align-items: flex-end;
 }
 .square{
     margin-right:10px;
 }
 a .square{
-    color:#333
+    color:#5a5d44;
 
 }
 .linkedin-box{
     color: white;
     margin-top: 2px;
-    background-color: black;
+    background-color: rgb(92, 80, 80);
     width: 43px;
     height: 43px;
     border-radius: 3px;
