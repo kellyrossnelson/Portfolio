@@ -41,7 +41,7 @@ body{
 }
 nav a{
     font-family: 'Montserrat', sans-serif;
-    font-size:15px;
+    font-size:20px;
     color:#5d5c59;
     font-weight: light;
     margin: 0 80px;
@@ -57,6 +57,8 @@ a:hover{
 h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
+    font-size:40px;
+
 }
 .home-photo{
     width: 700px;
@@ -170,10 +172,20 @@ h1{
     color: #9ea599;
     transition: 500ms ease;
 }
-h2{
+.port-1{
     color: #b78b4e;
     text-align: center;
-    size: 100px;
+    font-size: 50px;
+}
+.port-2{
+    color: #b78b4e;
+    text-align: center;
+    font-size: 50px;
+}
+.port-3{
+    color: #b78b4e;
+    text-align: center;
+    font-size: 50px;
 }
 
 .port-pics{
@@ -208,6 +220,7 @@ h2{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-around;
+    margin-bottom: 125px;
     
 }
 form{
@@ -242,19 +255,29 @@ textarea{
 .icons-flex{
     width: 100%;
     display:flex;
-    flex-wrap:wrap;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: stretch;
     font-family: 'Montserrat', 'sans-serif';
     font-size: medium;
-    /* margin-top: 50px;
-    padding-top:50px; */
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
 }
-.icons-box{
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-end;
+.logo-2{
+    display:flex;
+    height:150px;
+    width: 150px;
+    border: solid; 
+    color: #5d5c59;
+    border-width: 2px;
 }
+.lets-connect{
+    color: #b78b4e;
+    font-size: 40px;
+}
+
+
 .square{
     margin-right:10px;
 }
